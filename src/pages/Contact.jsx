@@ -37,7 +37,7 @@ function Contact() {
           <p>ashokmeats@gmail.com</p>
 
           <h4>Phone</h4>
-          <p>+91 98765 43210</p>
+          <p>+91 00000 00000</p>
 
           <h4>Location</h4>
           <p>Bengaluru, India</p>
@@ -66,7 +66,10 @@ function Contact() {
           <select value={item} onChange={(e) => setItem(e.target.value)}>
             <option>Chicken</option>
             <option>Mutton</option>
-            <option>Eggs</option>
+            <option>Fish</option>
+            <option>Duck</option>
+            <option>Boti</option>
+            <option>Lamp</option>
           </select>
 
           <label>Message</label>

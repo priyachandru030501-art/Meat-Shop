@@ -21,10 +21,18 @@ function Contact() {
     <>
       <header>
         <Link to="/" className="logo">Ashok Meat Shop</Link>
-
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/contact">Contact</Link>
+ 
+        <button
+          className="menu-toggle"
+          onClick={() => setOpen(!open)}
+          aria-label="Toggle menu"
+        >
+            {open ? "✕" : "☰"}
+        </button>
+ 
+        <nav className={open ? "open" : ""}>
+          <Link to="/" onClick={() => setOpen(false)}>Home</Link>
+          <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
         </nav>
       </header>
 

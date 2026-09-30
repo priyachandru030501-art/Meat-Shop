@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -18,16 +19,25 @@ function Contact() {
 
   return (
     <>
+      <header>
+        <Link to="/" className="logo">Ashok Meat Shop</Link>
+
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/contact">Contact</Link>
+        </nav>
+      </header>
+
       <section className="contact">
         <div className="contact-info">
           <h2>Let's talk about your order</h2>
           <p>Place your order and we will call you to confirm.</p>
 
           <h4>Email</h4>
-          <p>freshmeats@gmail.com</p>
+          <p>ashokmeats@gmail.com</p>
 
           <h4>Phone</h4>
-          <p>+91 00000 00000</p>
+          <p>+91 98765 43210</p>
 
           <h4>Location</h4>
           <p>Bengaluru, India</p>
@@ -73,7 +83,7 @@ function Contact() {
       </section>
 
       <footer>
-        <p>© 2026 Fresh Meat Shop. All Rights Reserved.</p>
+        <p>© 2026 Ashok Meat Shop. All Rights Reserved.</p>
       </footer>
     </>
   );

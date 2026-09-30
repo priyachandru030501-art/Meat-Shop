@@ -4,7 +4,15 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
-    
+    <header>
+        <Link to="/" className="logo">Ashok Meat Shop</Link>
+ 
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/contact">Contact</Link>
+        </nav>
+      </header>
+ 
       <section className="hero">
         <div className="hero-content">
           <h1>Fresh Meat, Cut Daily</h1>

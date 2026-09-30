@@ -20,7 +20,7 @@ function Contact() {
   return (
     <>
       <header>
-        <Link to="/" className="logo">Ashok Meat Shop</Link>
+        <Link to="/" className="logo">Fresh Meat Shop</Link>
  
         <button
           className="menu-toggle"
@@ -42,7 +42,7 @@ function Contact() {
           <p>Place your order and we will call you to confirm.</p>
 
           <h4>Email</h4>
-          <p>ashokmeats@gmail.com</p>
+          <p>freshmeats@gmail.com</p>
 
           <h4>Phone</h4>
           <p>+91 00000 00000</p>

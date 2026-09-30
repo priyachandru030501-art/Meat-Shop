@@ -12,7 +12,6 @@ function Home() {
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
-          {open ? "✕" : "☰"}
         </button>
  
         <nav className={open ? "open" : ""}>
